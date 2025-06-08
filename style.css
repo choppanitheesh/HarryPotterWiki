@@ -766,7 +766,6 @@ body[class*="theme-"]:not(.theme-luna):not(.theme-draco) .cta {
   }
   #quiz-result h1 {
     font-size: 2.0em;
-  line-height: 1.1;
     overflow-wrap: break-word;
     word-break: break-word;
   }
