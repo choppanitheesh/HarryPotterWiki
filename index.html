@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts Wiki</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Spectral+SC:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="sound-toggle" aria-label="Toggle Sound">🔇</button>
+    <audio id="bg-music" loop>
+      <source src="harry.mp3" type="audio/mp3" />
+    </audio>
+
+    <header class="hero">
+      <div class="hero-bg">
+        <video autoplay muted loop playsinline poster="poster.png">
+          <source src="harry.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-content">
+        <h1>Hogwarts</h1>
+        <p>Discover the magic, lore, and legacy of the wizarding world.</p>
+        <a href="#explore" class="cta">Start Exploring</a>
+      </div>
+    </header>
+
+    <section id="explore" class="explore-section fade-in">
+      <div class="intro">
+        <h2>Explore the World</h2>
+        <p>
+          Choose your path through the enchanting archives of the Potterverse.
+        </p>
+      </div>
+      <div class="nav-grid">
+        <a href="books.html" class="nav-card">📚<span>Books</span></a>
+        <a href="characters.html" class="nav-card">🧙<span>Characters</span></a>
+        <a href="houses.html" class="nav-card">🏰<span>Houses</span></a>
+        <a href="spells.html" class="nav-card">✨<span>Spells</span></a>
+      </div>
+    </section>
+
+    <script>
+      document.querySelector(".cta").addEventListener("click", (e) => {
+        e.preventDefault();
+        document
+          .querySelector("#explore")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+    <script src="global.js" defer></script>
+    <script src="easter-eggs.js" defer></script>
+  </body>
+</html>
