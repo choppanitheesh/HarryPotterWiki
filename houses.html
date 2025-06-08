@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Houses | Hogwarts Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="sound-toggle" aria-label="Toggle Sound">🔇</button>
+    <audio id="bg-music" loop>
+      <source src="harry.mp3" type="audio/mp3" />
+    </audio>
+    <main class="container">
+      <a href="index.html" class="back-button" aria-label="Go to Homepage"
+        >« Home</a
+      >
+      <h1>The Great Houses</h1>
+      <div class="loader" role="status">Summoning records...</div>
+      <div id="houses-list" aria-live="polite"></div>
+    </main>
+    <script src="js/houses.js"></script>
+    <script src="global.js" defer></script>
+    <script src="easter-eggs.js" defer></script>
+  </body>
+</html>
