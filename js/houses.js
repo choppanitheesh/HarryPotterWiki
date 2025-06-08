@@ -20,9 +20,8 @@ async function fetchHouses() {
       details.innerHTML = `
         <h2>${house.house}</h2>
         <p><strong>Founder:</strong> ${house.founder}</p>
-        <p><strong>Animal:</strong> ${house.animal}</p>
-        <p><strong>Element:</strong> ${house.element || "N/A"}</p>
-        <p><strong>Ghost:</strong> ${house.ghost}</p>
+        <p><strong>Animal:</strong> ${house.emoji}</p>
+        <p><strong>Founder:</strong> ${house.founder || "N/A"}</p>
         <p><strong>Colors:</strong> ${house.colors?.join(", ") || "N/A"}</p>
       `;
 
