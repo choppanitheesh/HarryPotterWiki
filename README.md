@@ -7,7 +7,6 @@
 Welcome to the Hogwarts Wiki, an immersive and interactive web experience for all fans of the wizarding world. This project brings the magic of Harry Potter to life with dynamic content, stunning visuals, and a host of hidden interactive easter eggs.
 
 **[➡️ View Live Demo](https://choppanitheesh.github.io/HarryPotterWiki/index.html)**
-*(**Note:** Replace the link above with your actual live URL after deploying!)*
 
 ---
 
